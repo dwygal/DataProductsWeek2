@@ -1,0 +1,22 @@
+---
+title: "Week 2 Project"
+author: "Douglas Wygal"
+date: "5/28/2020"
+output: html_document
+---
+
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles()
+
+```
+```{r, echo=FALSE}
+my_map <- my_map %>%
+  addMarkers(lat=33.330829, lng=-112.000385,
+    popup="Home Sweet Home")
+my_map
+
+```
+
